@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --fonte-principal: "Roboto", sans-serif;
+}
+.container {
+  max-width: 50rem;
+  font-family: var(--fonte-principal);
+}
+
+.btn-google {
+  color: white;
+}
+
+.btn-facebook {
+  color: white;
+}
+
+.btn-custom {
+  border-color: #6f42c1;
+}
+
+.btn-outline-custom:hover {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.btn-custom {
+  background-color: #d8b5f3;
+  color: white;
+}
+
+input[type="email" i] {
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+input[type="password" i] {
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+#register {
+  width: 11.75rem;
+  height: 3.81rem;
+  margin: 0.3rem;
+  background-color: #f5f5f5;
+  border-color: #8c52a7;
+  color: #8c52a7;
+  width: 100%;
+}
+
+#login {
+  width: 11.75rem;
+  height: 3.81rem;
+  margin: 0.3rem;
+  width: 100%;
+}
+
+#forgotPassword {
+  text-decoration: none;
+}
+#loginForm {
+  margin: 3rem 0;
+}
+.text-left {
+  font-size: 1.8rem;
+}
+#togglePassword {
+  background-color: #f5f5f5;
+}
+
+.container-custom {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  .container-custom {
+    padding: 0 15px;
+  }
+}
+
+.custom-btn {
+  width: 100%;
+}
+
+.social-btn {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 575.98px) {
+  .social-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: 575.98px) {
+  .text-left,
+  .text-center,
+  .text-right {
+    text-align: center;
+  }
+
+  .form-check {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-check a {
+    margin-top: 10px;
+  }
+}

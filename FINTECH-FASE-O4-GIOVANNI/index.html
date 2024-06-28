@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login</title>
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="text-left mb-4">
+            <a href="#"><img src="/assets/oui_arrow-up.png" alt="Voltar" /></a>
+          </div>
+          <h2 class="text-left">Acesse</h2>
+          <p class="text-left">Com o e-mail e senha para entrar</p>
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="email">Digite o seu e-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Digite sua senha</label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Senha"
+                  required
+                />
+                <div class="input-group-append">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    id="togglePassword"
+                  >
+                    <img
+                      src="/assets/iconamoon_eye-light.png"
+                      alt="ícone de mostrar/esconder senha"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group form-check d-flex justify-content-between">
+              <div>
+                <input type="checkbox" class="form-check-input" id="remember" />
+                <label class="form-check-label" for="remember"
+                  >Lembrar minha senha</label
+                >
+              </div>
+              <a href="#" id="forgotPassword">Esqueci minha senha</a>
+            </div>
+            <div class="form-group d-flex justify-content-between">
+              <button
+                type="button"
+                class="btn btn-outline-custom"
+                id="register"
+              >
+                Cadastrar
+              </button>
+              <button type="submit" class="btn btn-custom" id="login">
+                Acessar
+              </button>
+            </div>
+          </form>
+          <div class="text-center">
+            <p>Ou acesse com</p>
+            <button type="button" class="btn btn-google mr-2" id="googleLogin">
+              <img src="/assets/bt_google.png" alt="botão do googleLogin" />
+            </button>
+            <button type="button" class="btn btn-facebook" id="facebookLogin">
+              <img src="/assets/bt_facebook.png" alt="botão do facebookLogin" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
